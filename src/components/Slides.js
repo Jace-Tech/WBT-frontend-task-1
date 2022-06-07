@@ -21,7 +21,7 @@ function Slides({ slides }) {
         <div>
             <div id="navigation" className="text-center">
                 <button data-testid="button-restart" onClick={handleRestart} disabled={currentIndex === 0} className="small outlined">Restart</button>
-                <button data-testid="button-prev" onClick={handlePrev} disabled={currentIndex < 1} className="small outlined">Prev</button>
+                <button data-testid="button-prev" onClick={handlePrev} disabled={currentIndex < 1} className="small">Prev</button>
                 <button data-testid="button-next" onClick={handleNext} disabled={currentIndex >= slides.length - 1} className="small">Next</button>
             </div>
             <div id="slide" className="card text-center">
